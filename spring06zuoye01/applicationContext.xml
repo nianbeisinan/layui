@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"
+>
+    <bean id="Fangbianmian" class="spring06zuoye01.Fangbianmian"> </bean>
+    <bean id="HuoTuiChang" class="spring06zuoye01.HuoTuiChang"> </bean>
+    <bean id="LuoshiFen" class="spring06zuoye01.LuoshiFen"> </bean>
+
+
+    <bean id="Person" class="spring06zuoye01.Person">
+        <!--<property name="eat" ref="Fangbianmian"></property>-->
+        <!--<property name="eat" ref="HuoTuiChang"></property>-->
+        <property name="eat" ref="LuoshiFen"></property>
+    </bean>
+
+</beans>
